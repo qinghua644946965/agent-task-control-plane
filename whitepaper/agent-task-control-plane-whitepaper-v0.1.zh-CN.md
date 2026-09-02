@@ -1,6 +1,6 @@
 # Agent Task Control Plane
 
-[Repository README (English)](../README.md) | [仓库说明（简体中文）](../README.zh-CN.md)
+[English Whitepaper](agent-task-control-plane-whitepaper-v0.1.en.md) | **简体中文白皮书** | [Repository README](../README.md)
 
 ## 面向人类治理的多智能体任务控制平面参考架构
 

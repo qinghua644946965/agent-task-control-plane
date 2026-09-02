@@ -121,6 +121,7 @@ agent-task-control-plane/
 ├── README.zh-CN.md
 ├── LICENSE
 ├── whitepaper/
+│   ├── agent-task-control-plane-whitepaper-v0.1.en.md
 │   └── agent-task-control-plane-whitepaper-v0.1.zh-CN.md
 ├── diagrams/
 └── specs/
@@ -140,9 +141,10 @@ specs/
 
 ## Whitepaper
 
-The initial Chinese-language whitepaper is available here:
+The whitepaper is available in English and Simplified Chinese:
 
-[`whitepaper/agent-task-control-plane-whitepaper-v0.1.zh-CN.md`](whitepaper/agent-task-control-plane-whitepaper-v0.1.zh-CN.md)
+- [English](whitepaper/agent-task-control-plane-whitepaper-v0.1.en.md)
+- [简体中文](whitepaper/agent-task-control-plane-whitepaper-v0.1.zh-CN.md)
 
 Current status:
 
