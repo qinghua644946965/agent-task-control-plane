@@ -1,5 +1,7 @@
 # Agent Task Control Plane
 
+**English** | [简体中文](README.zh-CN.md)
+
 **Agent Task Control Plane (ATCP)** is a reference architecture for governing parallel AI-agent work without forcing humans to manually track every task, context switch, deployment state, verification step, and approval point.
 
 > **Agents scale. Human working memory doesn't.**
@@ -116,6 +118,7 @@ Task state: INCOMPLETE
 ```text
 agent-task-control-plane/
 ├── README.md
+├── README.zh-CN.md
 ├── LICENSE
 ├── whitepaper/
 │   └── agent-task-control-plane-whitepaper-v0.1.md
@@ -137,7 +140,7 @@ specs/
 
 ## Whitepaper
 
-The initial whitepaper is available here:
+The initial Chinese-language whitepaper is available here:
 
 [`whitepaper/agent-task-control-plane-whitepaper-v0.1.md`](whitepaper/agent-task-control-plane-whitepaper-v0.1.md)
 
