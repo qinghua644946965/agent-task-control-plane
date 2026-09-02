@@ -119,7 +119,7 @@ agent-task-control-plane/
 ├── README.zh-CN.md
 ├── LICENSE
 ├── whitepaper/
-│   └── agent-task-control-plane-whitepaper-v0.1.md
+│   └── agent-task-control-plane-whitepaper-v0.1.zh-CN.md
 ├── diagrams/
 └── specs/
 ```
@@ -128,7 +128,7 @@ agent-task-control-plane/
 
 中文版初始白皮书：
 
-[`whitepaper/agent-task-control-plane-whitepaper-v0.1.md`](whitepaper/agent-task-control-plane-whitepaper-v0.1.md)
+[`whitepaper/agent-task-control-plane-whitepaper-v0.1.zh-CN.md`](whitepaper/agent-task-control-plane-whitepaper-v0.1.zh-CN.md)
 
 当前状态：
 
