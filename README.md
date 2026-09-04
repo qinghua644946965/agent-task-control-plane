@@ -123,8 +123,9 @@ agent-task-control-plane/
 ├── README.zh-CN.md
 ├── LICENSE
 ├── whitepaper/
-│   ├── agent-task-control-plane-whitepaper-v0.1.en.md
-│   └── agent-task-control-plane-whitepaper-v0.1.zh-CN.md
+│   ├── Agent_Task_Control_Plane_Whitepaper_v0.1_en.md
+│   ├── Agent_Task_Control_Plane_Whitepaper_v0.1_en.pdf
+│   └── Agent_Task_Control_Plane_Whitepaper_v0.1_zh-CN.md
 ├── diagrams/
 └── specs/
 ```
@@ -141,12 +142,30 @@ specs/
 └── task-protocol.md
 ```
 
+## Preferred foundation: native task continuation
+
+ATCP can operate through external checkpoints, summaries, and context reconstruction. Its preferred foundation, however, is [Native Stateful Task Continuation](https://github.com/qinghua644946965/native-stateful-task-continuation): the ability for a user-authorized control plane to address and continue an existing provider-native task instead of rebuilding it as a new call.
+
+This creates a clean division of responsibility:
+
+- **ATCP** governs global goals, task relationships, lifecycle state, approvals, verification, and traceability.
+- **Native Stateful Task Continuation** preserves state locality by leaving each task's long-term local state with its native provider runtime.
+
+ATCP therefore supports three capability levels:
+
+1. **Stateless Reconstruction** — rebuild the required context for each call.
+2. **External Checkpoint Restoration** — restore summaries, state, events, and artifacts maintained by the control plane.
+3. **Native Stateful Continuation** — directly address and continue the original provider-native task. This is the preferred operating model.
+
+Native continuation is an enabling capability, not a hard dependency. ATCP remains usable at Levels 1 and 2 while benefiting most from Level 3.
+
 ## Whitepaper
 
 The whitepaper is available in English and Simplified Chinese:
 
-- [English](whitepaper/agent-task-control-plane-whitepaper-v0.1.en.md)
-- [简体中文](whitepaper/agent-task-control-plane-whitepaper-v0.1.zh-CN.md)
+- [English](whitepaper/Agent_Task_Control_Plane_Whitepaper_v0.1_en.md)
+- [简体中文](whitepaper/Agent_Task_Control_Plane_Whitepaper_v0.1_zh-CN.md)
+- [English PDF](whitepaper/Agent_Task_Control_Plane_Whitepaper_v0.1_en.pdf)
 - Zenodo DOI: [10.5281/zenodo.22259004](https://doi.org/10.5281/zenodo.22259004)
 
 Current status:

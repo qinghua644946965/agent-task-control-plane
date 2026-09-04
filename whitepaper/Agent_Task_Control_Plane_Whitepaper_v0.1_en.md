@@ -1,6 +1,6 @@
 # Agent Task Control Plane
 
-**English** | [简体中文](agent-task-control-plane-whitepaper-v0.1.zh-CN.md)
+**English** | [简体中文](Agent_Task_Control_Plane_Whitepaper_v0.1_zh-CN.md)
 
 ## A Reference Architecture for Human-Governed Multi-Agent Task Control
 
@@ -293,6 +293,27 @@ Normal operation should not continuously interrupt the user. Human attention sho
 - inconsistent agent states;
 - prolonged stalls;
 - suspected goal drift.
+
+---
+
+## 3.7 Preferred Foundation: Native Stateful Task Continuation
+
+ATCP can operate through externally maintained checkpoints, summaries, events, artifacts, and reconstructed context. Its preferred foundation, however, is [Native Stateful Task Continuation](https://github.com/qinghua644946965/native-stateful-task-continuation): a user-authorized capability to stably address and continue an existing provider-native task rather than recreating it as a new model call.
+
+The two layers have distinct responsibilities:
+
+- **ATCP governs global state:** goals, task relationships, routing, lifecycle transitions, approvals, verification, and traceability.
+- **The provider maintains local task state:** native context, execution history, recoverable file and tool state, summaries, and checkpoints.
+
+This preserves **State Locality** while keeping global governance under user control.
+
+ATCP recognizes three capability levels:
+
+1. **Stateless Reconstruction** - the caller rebuilds the required context for each invocation.
+2. **External Checkpoint Restoration** - the control plane restores its own summaries, state, events, and artifacts.
+3. **Native Stateful Continuation** - the control plane addresses and continues the original provider-native task.
+
+Level 3 is the preferred operating model, but it is not a hard dependency. ATCP remains useful with Levels 1 and 2, allowing incremental adoption while native continuation capabilities mature.
 
 ---
 

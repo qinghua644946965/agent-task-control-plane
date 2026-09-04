@@ -121,18 +121,37 @@ agent-task-control-plane/
 ├── README.zh-CN.md
 ├── LICENSE
 ├── whitepaper/
-│   ├── agent-task-control-plane-whitepaper-v0.1.en.md
-│   └── agent-task-control-plane-whitepaper-v0.1.zh-CN.md
+│   ├── Agent_Task_Control_Plane_Whitepaper_v0.1_en.md
+│   ├── Agent_Task_Control_Plane_Whitepaper_v0.1_en.pdf
+│   └── Agent_Task_Control_Plane_Whitepaper_v0.1_zh-CN.md
 ├── diagrams/
 └── specs/
 ```
+
+## 优选基础能力：原生任务续接
+
+ATCP 可以通过外部检查点、摘要和上下文重建运行，但其优选基础能力是 [Native Stateful Task Continuation（原生有状态任务续接）](https://github.com/qinghua644946965/native-stateful-task-continuation)：由用户授权的控制平面能够稳定寻址并继续已有的厂商原生任务，而不是把它重新构造成一次新调用。
+
+两者形成清晰的职责分工：
+
+- **ATCP** 负责全局目标、任务关系、生命周期状态、审批、验证与追踪。
+- **原生有状态任务续接** 保持状态局部性，让每个任务的长期局部状态留在其原生厂商运行时中。
+
+因此，ATCP 支持三个能力层级：
+
+1. **无状态重建**——每次调用重新组织所需上下文。
+2. **外部检查点恢复**——恢复由控制平面维护的摘要、状态、事件和产物。
+3. **原生有状态续接**——直接寻址并继续原来的厂商原生任务，这是优选运行形态。
+
+原生续接是增强 ATCP 的底层能力，而不是硬性依赖。ATCP 在前两个层级仍然可以运行，并在第三个层级获得最佳效果。
 
 ## 白皮书
 
 白皮书提供英文版和简体中文版：
 
-- [English](whitepaper/agent-task-control-plane-whitepaper-v0.1.en.md)
-- [简体中文](whitepaper/agent-task-control-plane-whitepaper-v0.1.zh-CN.md)
+- [English](whitepaper/Agent_Task_Control_Plane_Whitepaper_v0.1_en.md)
+- [简体中文](whitepaper/Agent_Task_Control_Plane_Whitepaper_v0.1_zh-CN.md)
+- [英文 PDF](whitepaper/Agent_Task_Control_Plane_Whitepaper_v0.1_en.pdf)
 - Zenodo DOI：[10.5281/zenodo.22259004](https://doi.org/10.5281/zenodo.22259004)
 
 当前状态：
