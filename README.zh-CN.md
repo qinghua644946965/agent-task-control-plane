@@ -1,5 +1,7 @@
 # Agent Task Control Plane
 
+**项目定位：Reference Architecture / Open Discussion Draft。** 参见[定位与现实对照](POSITIONING.md)。本项目不主张首创或概念优先权；拟议收益仍需对照验证。
+
 [English](README.md) | **简体中文**
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22259004.svg)](https://doi.org/10.5281/zenodo.22259004)
@@ -10,7 +12,7 @@
 
 ## 为什么需要 ATCP
 
-并行 AI Agent 会带来一个新的瓶颈：人类操作者。
+并行 AI Agent 可能放大已有的协调瓶颈：人类操作者的注意力与上下文管理负担。
 
 当多个长时间运行或异步执行的 Agent 同时工作时，用户很快会遇到以下问题：
 
@@ -147,17 +149,19 @@ ATCP 可以通过外部检查点、摘要和上下文重建运行，但其优选
 
 ## 白皮书
 
+PDF 与 DOI 保留已发布 v0.1；当前 Markdown 包含后续定位修订。参见[归档与引用边界](POSITIONING.md)。
+
 白皮书提供英文版和简体中文版：
 
 - [English](whitepaper/Agent_Task_Control_Plane_Whitepaper_v0.1_en.md)
 - [简体中文](whitepaper/Agent_Task_Control_Plane_Whitepaper_v0.1_zh-CN.md)
-- [英文 PDF](whitepaper/Agent_Task_Control_Plane_Whitepaper_v0.1_en.pdf)
+- [英文 PDF — v0.1 历史归档](whitepaper/Agent_Task_Control_Plane_Whitepaper_v0.1_en.pdf)
 - Zenodo DOI：[10.5281/zenodo.22259004](https://doi.org/10.5281/zenodo.22259004)
 
 当前状态：
 
 - 版本：**v0.1**
-- 状态：**v0.1 已发布 / 开放讨论**
+- 状态：**Reference Architecture / Open Discussion Draft**
 - 重点：**参考架构与问题定义**
 
 ## 非目标

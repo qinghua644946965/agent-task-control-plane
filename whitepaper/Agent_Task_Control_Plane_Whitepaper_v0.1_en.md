@@ -1,11 +1,13 @@
 # Agent Task Control Plane
 
+**Positioning: Reference Architecture / Open Discussion Draft.** See [project positioning and existing work](../POSITIONING.md). This project makes no claim of invention priority; proposed benefits remain subject to comparison and validation.
+
 **English** | [简体中文](Agent_Task_Control_Plane_Whitepaper_v0.1_zh-CN.md)
 
 ## A Reference Architecture for Human-Governed Multi-Agent Task Control
 
 **Version:** v0.1  
-**Status:** Draft / Open for Discussion  
+**Status:** Reference Architecture / Open Discussion Draft (positioning revision based on v0.1)<br>
 **Language:** English  
 **Author:** Qinghua Ran  
 **DOI:** 10.5281/zenodo.22259004  
@@ -13,9 +15,11 @@
 
 ---
 
+The published v0.1 PDF and DOI are historical snapshots. This Markdown includes a later positioning revision; see [POSITIONING.md](../POSITIONING.md) for existing work and citation boundaries.
+
 ## Abstract
 
-As AI agents evolve from single-task, single-session tools into systems that execute multiple long-running tasks concurrently and asynchronously, a new bottleneck emerges: **agent parallelism can scale quickly, but human working memory, context-switching capacity, and attention do not scale with it.**
+As AI agents evolve from single-task, single-session tools into systems that execute multiple long-running tasks concurrently and asynchronously, an existing coordination challenge can become more visible: **agent parallelism can scale quickly, but human working memory, context-switching capacity, and attention do not scale with it.**
 
 In practical multi-agent coding workflows, a person soon encounters recurring problems:
 
@@ -941,7 +945,7 @@ Human working memory cannot.
 
 Therefore:
 
-> **The next infrastructure layer for multi-agent systems is not only orchestration. It is a Task Control Plane.**
+> **A task control plane is one reference-architecture option for organizing existing execution and governance capabilities; its added value should be tested against existing runtimes and workflows.**
 
 ---
 

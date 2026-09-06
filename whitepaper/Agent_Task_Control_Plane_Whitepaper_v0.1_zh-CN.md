@@ -1,19 +1,23 @@
 # Agent Task Control Plane
 
+**项目定位：Reference Architecture / Open Discussion Draft。** 参见[定位与现实对照](../POSITIONING.md)。本项目不主张首创或概念优先权；拟议收益仍需对照验证。
+
 [English](Agent_Task_Control_Plane_Whitepaper_v0.1_en.md) | **简体中文**
 ## 面向人类治理的多智能体任务控制平面参考架构
 
 **Version:** v0.1  
-**Status:** Published v0.1 / Open for Discussion  
+**Status:** Reference Architecture / Open Discussion Draft（基于 v0.1 的定位修订）<br>
 **Language:** 简体中文  
 **Author:** Qinghua Ran（冉庆华）  
 **License Recommendation:** 本白皮书采用 CC BY 4.0；后续参考实现建议采用 Apache-2.0 或 MIT
 
 ---
 
+已发布 v0.1 PDF 与 DOI 为历史快照。本 Markdown 包含后续定位修订；已有工作与引用边界见 [POSITIONING.md](../POSITIONING.md)。
+
 ## 摘要
 
-当 AI Agent 从“单任务、单会话”逐渐走向“多任务、并行、异步执行”后，新的瓶颈开始出现：**Agent 的并行能力增长得很快，但人的工作记忆、上下文切换能力和注意力并不会同步扩展。**
+当 AI Agent 从“单任务、单会话”逐渐走向“多任务、并行、异步执行”后，已有的协调负担可能更加明显：**Agent 的并行能力增长得很快，但人的工作记忆、上下文切换能力和注意力并不会同步扩展。**
 
 在实际使用多个 Coding Agent 时，一个人很快会遇到以下问题：
 
@@ -24,7 +28,7 @@
 - 多个任务之间容易串上下文；
 - Agent 完成自己的局部工作后容易过早宣布“任务完成”；
 - 多个 Agent 并行执行时，人本身开始充当 Router、项目经理、状态机、观察者和消息队列；
-- 当任务数量增加时，人的认知负担近似线性上升，最终抵消 Agent 带来的并行收益。
+- 当任务数量增加时，人的认知负担可能上升并抵消部分并行收益；变化幅度与增长关系尚需测量。
 
 本白皮书提出一个参考架构：
 
@@ -1028,7 +1032,7 @@ Agent 可以扩展。
 
 因此：
 
-> **多 Agent 的下一层基础设施，不只是 Orchestration，而是 Task Control Plane。**
+> **任务控制平面是组织既有执行与治理能力的一种参考架构选择；其增量价值应与现有 runtime 和工作流对照验证。**
 
 ---
 

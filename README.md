@@ -1,5 +1,7 @@
 # Agent Task Control Plane
 
+**Positioning: Reference Architecture / Open Discussion Draft.** See [project positioning and existing work](POSITIONING.md). This project makes no claim of invention priority; proposed benefits remain subject to comparison and validation.
+
 **English** | [简体中文](README.zh-CN.md)
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22259004.svg)](https://doi.org/10.5281/zenodo.22259004)
@@ -10,7 +12,7 @@
 
 ## Why this exists
 
-Parallel AI agents create a new bottleneck: the human operator.
+Parallel AI agents can make an existing coordination bottleneck more visible: the human operator.
 
 Once several long-running or asynchronous agents are active at the same time, users quickly encounter problems such as:
 
@@ -161,17 +163,19 @@ Native continuation is an enabling capability, not a hard dependency. ATCP remai
 
 ## Whitepaper
 
+The PDF and DOI preserve published v0.1; current Markdown includes subsequent positioning revisions. See [archive boundaries](POSITIONING.md).
+
 The whitepaper is available in English and Simplified Chinese:
 
 - [English](whitepaper/Agent_Task_Control_Plane_Whitepaper_v0.1_en.md)
 - [简体中文](whitepaper/Agent_Task_Control_Plane_Whitepaper_v0.1_zh-CN.md)
-- [English PDF](whitepaper/Agent_Task_Control_Plane_Whitepaper_v0.1_en.pdf)
+- [English PDF — archived v0.1](whitepaper/Agent_Task_Control_Plane_Whitepaper_v0.1_en.pdf)
 - Zenodo DOI: [10.5281/zenodo.22259004](https://doi.org/10.5281/zenodo.22259004)
 
 Current status:
 
 - Version: **v0.1**
-- Status: **Published v0.1 / Open for Discussion**
+- Status: **Reference Architecture / Open Discussion Draft**
 - Focus: **Reference architecture and problem definition**
 
 ## Non-goals
