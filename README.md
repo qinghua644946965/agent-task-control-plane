@@ -124,10 +124,10 @@ agent-task-control-plane/
 ├── README.md
 ├── README.zh-CN.md
 ├── LICENSE
-├── whitepaper/
-│   ├── Agent_Task_Control_Plane_Whitepaper_v0.1_en.md
-│   ├── Agent_Task_Control_Plane_Whitepaper_v0.1_en.pdf
-│   └── Agent_Task_Control_Plane_Whitepaper_v0.1_zh-CN.md
+├── drafts/
+│   ├── Agent_Task_Control_Plane_v0.1_en.md
+│   ├── Agent_Task_Control_Plane_v0.1_en.pdf
+│   └── Agent_Task_Control_Plane_v0.1_zh-CN.md
 ├── diagrams/
 └── specs/
 ```
@@ -161,18 +161,16 @@ ATCP therefore supports three capability levels:
 
 Native continuation is an enabling capability, not a hard dependency. ATCP remains usable at Levels 1 and 2 while benefiting most from Level 3.
 
-## Whitepaper
+## Draft
 
-The PDF and DOI preserve published v0.1; current Markdown includes subsequent positioning revisions. See [archive boundaries](POSITIONING.md).
+The v0.1 draft is available in English and Simplified Chinese:
 
-The whitepaper is available in English and Simplified Chinese:
-
-- [English](whitepaper/Agent_Task_Control_Plane_Whitepaper_v0.1_en.md)
-- [简体中文](whitepaper/Agent_Task_Control_Plane_Whitepaper_v0.1_zh-CN.md)
-- [English PDF — archived v0.1](whitepaper/Agent_Task_Control_Plane_Whitepaper_v0.1_en.pdf)
+- [English](drafts/Agent_Task_Control_Plane_v0.1_en.md)
+- [简体中文](drafts/Agent_Task_Control_Plane_v0.1_zh-CN.md)
+- [English PDF — archived v0.1](drafts/Agent_Task_Control_Plane_v0.1_en.pdf)
 - Zenodo DOI: [10.5281/zenodo.22259004](https://doi.org/10.5281/zenodo.22259004)
 
-Current status:
+## Current status
 
 - Version: **v0.1**
 - Status: **Reference Architecture / Open Discussion Draft**
@@ -215,12 +213,10 @@ If you reference this work, please cite:
 
 > Qinghua Ran. *Agent Task Control Plane: A Reference Architecture for Human-Governed Multi-Agent Systems.* Version 0.1, 2026. DOI: [10.5281/zenodo.22259004](https://doi.org/10.5281/zenodo.22259004)
 
-The archived v0.1 technical note is permanently available via Zenodo at [10.5281/zenodo.22259004](https://doi.org/10.5281/zenodo.22259004).
-
 ## License
 
 - Repository reference implementation and specifications: **Apache License 2.0**
-- Whitepaper v0.1: **CC BY 4.0**
+- v0.1 technical note: **CC BY 4.0**
 
 For simplicity, this repository currently uses **Apache License 2.0** as the top-level software/project license.
 

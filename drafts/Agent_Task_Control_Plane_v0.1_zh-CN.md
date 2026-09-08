@@ -2,14 +2,14 @@
 
 **项目定位：Reference Architecture / Open Discussion Draft。** 参见[定位与现实对照](../POSITIONING.md)。本项目不主张首创或概念优先权；拟议收益仍需对照验证。
 
-[English](Agent_Task_Control_Plane_Whitepaper_v0.1_en.md) | **简体中文**
+[English](Agent_Task_Control_Plane_v0.1_en.md) | **简体中文**
 ## 面向人类治理的多智能体任务控制平面参考架构
 
 **Version:** v0.1  
 **Status:** Reference Architecture / Open Discussion Draft（基于 v0.1 的定位修订）<br>
 **Language:** 简体中文  
 **Author:** Qinghua Ran（冉庆华）  
-**License Recommendation:** 本白皮书采用 CC BY 4.0；后续参考实现建议采用 Apache-2.0 或 MIT
+**License Recommendation:** 本技术草案采用 CC BY 4.0；后续参考实现建议采用 Apache-2.0 或 MIT
 
 ---
 
@@ -30,7 +30,7 @@
 - 多个 Agent 并行执行时，人本身开始充当 Router、项目经理、状态机、观察者和消息队列；
 - 当任务数量增加时，人的认知负担可能上升并抵消部分并行收益；变化幅度与增长关系尚需测量。
 
-本白皮书提出一个参考架构：
+本文提出一个参考架构：
 
 > **Agent Task Control Plane（ATCP）——面向多智能体任务执行的任务控制平面。**
 
@@ -1018,7 +1018,7 @@ ATCP 的核心设计原则：
 
 # 17. 核心命题
 
-本白皮书最终试图表达的不是：
+本文最终试图表达的不是：
 
 > 如何让更多 Agent 同时运行。
 
@@ -1059,14 +1059,14 @@ Agent 可以扩展。
 
 建议：
 
-- 本白皮书：**CC BY 4.0**
+- 本技术草案：**CC BY 4.0**
 - 后续参考实现：**Apache License 2.0** 或 **MIT License**
 
 ---
 
 ## Citation
 
-如需引用本白皮书，建议使用：
+如需引用本文，建议使用：
 
 **Qinghua Ran（冉庆华）.**  
 *Agent Task Control Plane: A Reference Architecture for Human-Governed Multi-Agent Systems.*  

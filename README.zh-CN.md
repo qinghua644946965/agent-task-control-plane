@@ -122,10 +122,10 @@ agent-task-control-plane/
 ├── README.md
 ├── README.zh-CN.md
 ├── LICENSE
-├── whitepaper/
-│   ├── Agent_Task_Control_Plane_Whitepaper_v0.1_en.md
-│   ├── Agent_Task_Control_Plane_Whitepaper_v0.1_en.pdf
-│   └── Agent_Task_Control_Plane_Whitepaper_v0.1_zh-CN.md
+├── drafts/
+│   ├── Agent_Task_Control_Plane_v0.1_en.md
+│   ├── Agent_Task_Control_Plane_v0.1_en.pdf
+│   └── Agent_Task_Control_Plane_v0.1_zh-CN.md
 ├── diagrams/
 └── specs/
 ```
@@ -147,18 +147,16 @@ ATCP 可以通过外部检查点、摘要和上下文重建运行，但其优选
 
 原生续接是增强 ATCP 的底层能力，而不是硬性依赖。ATCP 在前两个层级仍然可以运行，并在第三个层级获得最佳效果。
 
-## 白皮书
+## 技术草案
 
-PDF 与 DOI 保留已发布 v0.1；当前 Markdown 包含后续定位修订。参见[归档与引用边界](POSITIONING.md)。
+v0.1 草案提供英文版和简体中文版：
 
-白皮书提供英文版和简体中文版：
-
-- [English](whitepaper/Agent_Task_Control_Plane_Whitepaper_v0.1_en.md)
-- [简体中文](whitepaper/Agent_Task_Control_Plane_Whitepaper_v0.1_zh-CN.md)
-- [英文 PDF — v0.1 历史归档](whitepaper/Agent_Task_Control_Plane_Whitepaper_v0.1_en.pdf)
+- [English](drafts/Agent_Task_Control_Plane_v0.1_en.md)
+- [简体中文](drafts/Agent_Task_Control_Plane_v0.1_zh-CN.md)
+- [英文 PDF — v0.1 历史归档](drafts/Agent_Task_Control_Plane_v0.1_en.pdf)
 - Zenodo DOI：[10.5281/zenodo.22259004](https://doi.org/10.5281/zenodo.22259004)
 
-当前状态：
+## 当前状态
 
 - 版本：**v0.1**
 - 状态：**Reference Architecture / Open Discussion Draft**
@@ -195,16 +193,14 @@ ATCP 并不试图：
 
 ## 引用
 
-如需引用本项目白皮书，建议使用：
+如需引用本项目，建议使用：
 
 > Qinghua Ran. *Agent Task Control Plane: A Reference Architecture for Human-Governed Multi-Agent Systems.* Version 0.1, 2026. DOI: [10.5281/zenodo.22259004](https://doi.org/10.5281/zenodo.22259004)
-
-v0.1 技术白皮书已由 Zenodo 永久归档：[10.5281/zenodo.22259004](https://doi.org/10.5281/zenodo.22259004)。
 
 ## 许可证
 
 - 仓库参考实现与规范：**Apache License 2.0**
-- 白皮书 v0.1：**CC BY 4.0**
+- v0.1 技术草案：**CC BY 4.0**
 
 为保持简单，本仓库目前统一使用 **Apache License 2.0** 作为顶层软件和项目许可证。
 

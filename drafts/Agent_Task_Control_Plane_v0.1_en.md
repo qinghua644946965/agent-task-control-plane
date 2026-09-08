@@ -2,7 +2,7 @@
 
 **Positioning: Reference Architecture / Open Discussion Draft.** See [project positioning and existing work](../POSITIONING.md). This project makes no claim of invention priority; proposed benefits remain subject to comparison and validation.
 
-**English** | [简体中文](Agent_Task_Control_Plane_Whitepaper_v0.1_zh-CN.md)
+**English** | [简体中文](Agent_Task_Control_Plane_v0.1_zh-CN.md)
 
 ## A Reference Architecture for Human-Governed Multi-Agent Task Control
 
@@ -11,7 +11,7 @@
 **Language:** English  
 **Author:** Qinghua Ran  
 **DOI:** 10.5281/zenodo.22259004  
-**License Recommendation:** CC BY 4.0 for this whitepaper; Apache-2.0 or MIT for a future reference implementation
+**License Recommendation:** CC BY 4.0 for this technical note; Apache-2.0 or MIT for a future reference implementation
 
 ---
 
@@ -32,7 +32,7 @@ In practical multi-agent coding workflows, a person soon encounters recurring pr
 - manually acting as router, project manager, state machine, observer, message bus, and approval gate;
 - losing the benefit of agent parallelism because cognitive overhead grows with the number of tasks.
 
-This whitepaper proposes a reference architecture:
+This document proposes a reference architecture:
 
 > **Agent Task Control Plane (ATCP): a task control plane for multi-agent execution.**
 
@@ -931,7 +931,7 @@ Future work may explore:
 
 # 17. Central Thesis
 
-This whitepaper is not ultimately about:
+This document is not ultimately about:
 
 > How to run more agents at the same time.
 
@@ -972,7 +972,7 @@ Questions for discussion include:
 
 Recommended licensing:
 
-- This whitepaper: **CC BY 4.0**
+- This technical note: **CC BY 4.0**
 - Future reference implementation: **Apache License 2.0** or **MIT License**
 
 ---
